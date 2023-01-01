@@ -1,0 +1,35 @@
+ALGORITHM 
+VAR
+    Nb_W :integer:= 1;
+    Nb_V :integer:= 0;
+    i := 0;
+    ch : string;
+    t:array :=["a","e","i","o","u","y"];
+BEGIN
+    write("write a sentence") 
+    read (ch) 
+        for (i=0;i<ch.length; i++) DO
+            if (ch[i] =" ")THEN
+                Nb_W = Nb_W +1
+            END_IF
+         
+            if (ch[i]in t) THEN
+                Nb_V=Nb_V+1
+            END_IF
+        END_FOR
+
+write ("number of word is ",Nb_W )
+write ("number of vowels is" ,Nb_V)
+write ("number of characters is" , ch.length )
+END
+
+
+
+
+
+
+
+
+
+
+
